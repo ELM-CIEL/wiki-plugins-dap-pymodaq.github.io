@@ -54,7 +54,7 @@ Resources and Downloads
 --------------------------
 
 These documents contain the step-by-step guide including all screenshots (PyMoDAQ interface, Raspberry Pi Imager configuration, etc.).
-* :download:`Download the Installation Guide (PDF) <Manuel/RaspPi3B_01_Notice_d_installation.pdf>`
+* :download:`Download the Installation Guide (PDF) <Manuel/RaspPi3B_ 01_Notice_d_installation.pdf>`
 * :download:`Download the User Manual (PDF) <Manuel/RaspPi3B_02_Manuel_d_utilisation.pdf>`
 * :download:`Download the Maintenance Guide (PDF) <Manuel/RaspPi3B_03_Notice_de_maintenance.pdf>`
 

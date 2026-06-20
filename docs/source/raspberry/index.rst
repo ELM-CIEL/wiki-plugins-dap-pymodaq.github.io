@@ -49,3 +49,18 @@ Installation (control computer)
   unavailable there.
 * The Raspberry-side server has its own requirements (I2C bus + ``pigpio`` daemon) —
   see :doc:`server`.
+
+Resources and Downloads
+=======================
+
+Below you will find the official documents and supplementary materials for installing and using the project.
+
+Detailed Installation Guide
+---------------------------
+
+This document contains the step-by-step guide including all screenshots (PyMoDAQ interface, Raspberry Pi Imager configuration, etc.).
+
+* :download:`Download the Installation Guide (PDF) <Manuel/RaspPi3B_01_Notice_d'installation.pdf>`
+* :download:`Download the User Manual (PDF) <Manuel/RaspPi3B_02_Manuel_d'utilisation.pdf>`
+* :download:`Download the Maintenance Guide (PDF) <Manuel/RaspPi3B_03_Notice_de_maintenance.pdf>`
+

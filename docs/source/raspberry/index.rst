@@ -20,7 +20,7 @@ Architecture at a glance
 
 .. code-block:: text
 
-   ┌──────────── Control computer ────────────┐         ┌──────── Raspberry Pi ────────┐
+   ┌──────────── Control computer ─────────────┐         ┌──────── Raspberry Pi ────────┐
    │  PyMoDAQ                                  │   ZMQ   │  server (src_raspberry/)     │
    │   ├─ DAQ_Move   MoveRasp                  │  <───>  │   transport → handler →      │
    │   ├─ DAQ_Viewer ViewRasp  ── ZMQLink ──── │   JSON  │   hardware backend           │

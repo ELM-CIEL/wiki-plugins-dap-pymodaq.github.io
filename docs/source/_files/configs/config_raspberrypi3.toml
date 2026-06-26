@@ -1,0 +1,67 @@
+# Example configuration for the DAP wiki — replace the IP addresses (and pins
+# if needed) with the values matching your own hardware before use.
+
+[RaspPi3]
+address_Rasp = '192.168.1.40'
+port = '5555'
+
+[RaspPi3.ACTUATOR.COMPONENT1]
+title = "Ventilateur"
+name = "ventilateur"
+units = "%"
+min = "0"
+max = "255"
+address = "None"
+pin = "18"
+
+[RaspPi3.ACTUATOR.COMPONENT2]
+title = "Resistance"
+name = "resistance"
+units = "%"
+min = "0"
+max = "255"
+address = "None"
+pin = "23"
+
+[RaspPi3.DETECTOR.COMPONENT1]
+title = "rh_sortie [aht10]"
+name = "rh_sortie"
+units = "RH"
+address = "0x38"
+pin = "None"
+
+[RaspPi3.DETECTOR.COMPONENT2]
+title = "t_resistance [tmp102]"
+name = "t_resistance"
+units = "°C"
+address = "0x48"
+pin = "None"
+
+[RaspPi3.DETECTOR.COMPONENT3]
+title = "t_dissipateur [tmp102]"
+name = "t_dissipateur"
+units = "°C"
+address = "0x49"
+pin = "None"
+
+[RaspPi3.DETECTOR.COMPONENT4]
+title = "t_entree [tmp102]"
+name = "t_entree"
+units = "°C"
+address = "0x4a"
+pin = "None"
+
+[RaspPi3.DETECTOR.COMPONENT5]
+title = "t_sortie [tmp102]"
+name = "t_sortie"
+units = "°C"
+address = "0x4b"
+pin = "None"
+
+[RaspPi3.DETECTOR.COMPONENT6]
+title = "T_emc [emc2101]"
+name = "T_emc"
+units = "°C"
+address = "0x4c"
+pin = "None"
+

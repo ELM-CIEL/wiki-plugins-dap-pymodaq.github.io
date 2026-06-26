@@ -27,8 +27,14 @@ avec **2 plugins** (Arduino + Raspberry unifié).
   `sitemap.xml` via `sphinx-sitemap`, `robots.txt`). Redirections des anciennes URLs
   retirées (collision de casse `Arduino/` vs `arduino/`). Build sans warning, vérifié.
 - ✅ **Sprint 11 — Finalisation (v2.0.0)** : relecture/cohérence, docs racine à jour,
-  build sans warning (12 pages), tag **production v2.0.0**. Reste à merger `dev` → `main`
-  et pousser (manuel, par l'utilisateur).
+  build sans warning (12 pages), tag **production v2.0.0**.
+- ✅ **Sprint 12 — Téléchargements (v2.1.0)** : page « Downloads » + carte accueil
+  (presets, configs en exemples, env conda, outil H5→CSV). Build sans warning, vérifié.
+- ⬜ **Sprint 13 — Package d'installation clé-en-main (v2.2.0)** : `.zip` autonome
+  (`.bat` adapté `%~dp0`, plugin Raspberry **unifié**, README). Prérequis : config TOML +
+  preset du plugin unifié.
+
+Reste à merger `dev` → `main` et pousser (manuel, par l'utilisateur).
 
 > L'historique ci-dessous documente la version **vanilla** (v0.0.1 → v1.3.0), conservée
 > pour mémoire.

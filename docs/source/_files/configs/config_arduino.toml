@@ -1,0 +1,42 @@
+# Example configuration for the DAP wiki — replace the IP addresses (and pins
+# if needed) with the values matching your own hardware before use.
+
+title = "this is the configuration file of the plugin Arduino"
+com_port = "COM24"
+ip_address = "192.168.1.50"
+ip_port = 31336
+
+[presets]
+preset_for_colorsynthesizer = "ArduinoLED"
+
+[LCD]
+address = 39
+cols = 16
+rows = 2
+
+[servo]
+pin = 2
+pos_1 = 55
+pos_2 = 80
+
+[esp32]
+ip_address = "192.168.1.51"
+
+[max31865]
+sck_pin = 48
+miso_pin = 47
+mosi_pin = 38
+cs_pin = 21
+
+[esp32.pins]
+heater_pin = 18
+fan_pin = 17
+
+[LED.pins]
+red_pin = 6
+green_pin = 4
+blue_pin = 5
+
+[FanHeater.pins]
+heater_pin = 9
+heater_fan_pin = 8

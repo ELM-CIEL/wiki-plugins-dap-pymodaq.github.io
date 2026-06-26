@@ -1,0 +1,32 @@
+# Example configuration for the DAP wiki — replace the IP addresses (and pins
+# if needed) with the values matching your own hardware before use.
+
+[RaspPiZero]
+address_Rasp = "192.168.1.51"
+port = "5555"
+
+[RaspPiZero.ACTUATOR.COMPONENT1]
+title = "Ventilateur"
+name = "ventilateur"
+units = "%"
+min = "0"
+max = "1"
+address = "None"
+pin = "13"
+
+[RaspPiZero.ACTUATOR.COMPONENT2]
+title = "Resistance"
+name = "resistance"
+units = "%"
+min = "0"
+max = "1"
+address = "None"
+pin = "19"
+
+
+[RaspPiZero.DETECTOR.COMPONENT1]
+title = "PT100"
+name = "pt100"
+units = "°C"
+address = "0x48"
+pin = "None"

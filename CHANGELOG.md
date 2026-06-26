@@ -5,6 +5,16 @@ Toutes les modifications notables de ce projet sont documentées ici.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/) (`MAJEUR.MINEUR.CORRECTIF`).
 
+## [2.1.0] - 2026-06-11
+
+### Ajouté
+- **Page « Downloads »** + carte d'accès sur l'accueil. Fichiers prêts à l'emploi :
+  - **Presets** PyMoDAQ (Arduino, RPi 3, RPi Zero) téléchargeables.
+  - **Configs en exemples** (`.toml`) affichées en bloc de code *et* téléchargeables,
+    avec adresses IP générisées.
+  - **Environnement conda** (`Py26env.yml`).
+  - **Outil autonome HDF5 → CSV** (`h5_to_csv_gui.py` + `H5_To_CSV.bat`) avec mode d'emploi.
+
 ## [2.0.0] - 2026-06-11
 
 Première version **« production »** du wiki Sphinx (refonte complète, développée sur la

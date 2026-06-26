@@ -27,9 +27,22 @@ Two plugins are documented here:
       Control an experimental bench through a **Raspberry Pi**: a PyMoDAQ actuator and
       detector talking to an on-Pi server over ZeroMQ.
 
+Downloads
+---------
+
+.. grid:: 1
+
+   .. grid-item-card:: Downloads ⬇
+      :link: downloads
+      :link-type: doc
+
+      Ready-to-use PyMoDAQ presets, example plugin configurations, the conda environment
+      and a standalone HDF5 → CSV conversion tool.
+
 .. toctree::
    :hidden:
    :maxdepth: 2
 
    arduino/index
    raspberry/index
+   downloads

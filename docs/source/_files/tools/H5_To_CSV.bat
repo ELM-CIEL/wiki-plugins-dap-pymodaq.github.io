@@ -14,8 +14,8 @@ if not defined CONDA_BAT (
     exit /b 1
 )
 
-REM Se placer sur le Desktop (la ou se trouve le script)
-cd /d "%USERPROFILE%\Desktop"
+REM Se placer dans le dossier du .bat (le script h5_to_csv_gui.py doit etre a cote)
+cd /d "%~dp0"
 
 echo === Activation de Py26 ===
 call "%CONDA_BAT%" activate Py26

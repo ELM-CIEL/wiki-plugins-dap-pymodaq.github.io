@@ -70,8 +70,9 @@ Run the script directly:
 
    python h5_to_csv_gui.py
 
-or use the helper that activates the ``Py26`` conda environment first (Windows — expects
-both files on the Desktop):
+or use the helper that activates the ``Py26`` conda environment first (Windows). Keep
+``H5_To_CSV.bat`` and ``h5_to_csv_gui.py`` **in the same folder** — it works from any
+location:
 
 .. code-block:: bat
 

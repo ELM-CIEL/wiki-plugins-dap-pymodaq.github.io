@@ -36,8 +36,8 @@ Downloads
       :link: downloads
       :link-type: doc
 
-      Example plugin configurations, the conda environment and a standalone
-      HDF5 → CSV conversion tool.
+      A turnkey installation package, example plugin configurations, the conda
+      environment and a standalone HDF5 → CSV conversion tool.
 
 .. toctree::
    :hidden:

@@ -1,13 +1,34 @@
 Downloads
 =========
 
-Ready-to-use files for the DAP PyMoDAQ plugins: example plugin configurations, the
-conda environment, and a standalone HDF5 → CSV conversion tool.
+Ready-to-use files for the DAP PyMoDAQ plugins: a turnkey installation package, example
+plugin configurations, the conda environment, and a standalone HDF5 → CSV conversion tool.
 
 .. note::
 
    The configuration files are provided as **working examples**. The IP addresses are
    placeholders — replace them with the values matching your own hardware before use.
+
+Installation package
+--------------------
+
+A turnkey **installation package** (Windows) that creates the ``Py26`` conda environment,
+installs both plugins (unified **Raspberry** + **Arduino**), and copies the example
+configurations and presets to the right PyMoDAQ folders.
+
+* :download:`install-dap-pymodaq.zip </_files/install/install-dap-pymodaq.zip>`
+
+**How to use** — unzip it anywhere, optionally edit the configs / presets in the
+``files`` folder, then **double-click** ``Install.bat`` and pick the actions from the
+menu. It requires Miniconda or Anaconda. See the ``README.txt`` inside the zip for
+details.
+
+.. warning::
+
+   The Raspberry preset (``Raspberry.xml``) was **adapted** from the former Raspberry
+   Pi 3 preset to the unified plugin (``MoveRasp`` / ``ViewRasp``) and is provided as a
+   starting point — verify it loads correctly in PyMoDAQ, or recreate it (*Preset Mode →
+   New preset → MoveRasp + ViewRasp*).
 
 Example configurations
 ----------------------

@@ -30,9 +30,10 @@ avec **2 plugins** (Arduino + Raspberry unifié).
   build sans warning (12 pages), tag **production v2.0.0**.
 - ✅ **Sprint 12 — Téléchargements (v2.1.0)** : page « Downloads » + carte accueil
   (presets, configs en exemples, env conda, outil H5→CSV). Build sans warning, vérifié.
-- ⬜ **Sprint 13 — Package d'installation clé-en-main (v2.2.0)** : `.zip` autonome
-  (`.bat` adapté `%~dp0`, plugin Raspberry **unifié**, README). Prérequis : config TOML +
-  preset du plugin unifié.
+- ✅ **Sprint 13 — Package d'installation clé-en-main (v2.2.0)** : `install-dap-pymodaq.zip`
+  (Install.bat double-clic autonome `%~dp0\files`, plugin Raspberry **unifié** + Arduino,
+  configs + presets + sources plugins, README). Section sur la page Downloads. ⚠️ Installeur
+  et preset Raspberry adapté **non testés** (pas de conda/PyMoDAQ ici) — à valider.
 
 Reste à merger `dev` → `main` et pousser (manuel, par l'utilisateur).
 

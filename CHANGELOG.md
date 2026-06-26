@@ -5,6 +5,23 @@ Toutes les modifications notables de ce projet sont documentées ici.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/) (`MAJEUR.MINEUR.CORRECTIF`).
 
+## [2.2.0] - 2026-06-11
+
+### Ajouté
+- **Package d'installation clé-en-main** (`install-dap-pymodaq.zip`) téléchargeable depuis
+  la page Downloads :
+  - `Install.bat` lançable au **double-clic** (menu interactif), rendu **autonome**
+    (`%~dp0\files`) et adapté au **plugin Raspberry unifié** + Arduino ;
+  - sous-dossier `files/` : environnement conda, configs (`config_raspberry.toml` converti
+    au format `[Raspberry]`, `config_arduino.toml`), presets (Arduino + **Raspberry
+    adapté** `MoveRasp`/`ViewRasp`), et les **sources des deux plugins** ;
+  - `README.txt` (éditer configs/presets avant lancement, preset Raspberry à vérifier).
+- `.gitattributes` : marquage binaire explicite (`*.zip`, images, `*.pdf`).
+
+### Note
+- L'installeur et le preset Raspberry adapté **n'ont pas pu être testés** ici (pas de
+  conda / PyMoDAQ dans l'environnement de build) — à valider côté montage.
+
 ## [2.1.1] - 2026-06-11
 
 ### Modifié

@@ -36,8 +36,8 @@ Downloads
       :link: downloads
       :link-type: doc
 
-      Ready-to-use PyMoDAQ presets, example plugin configurations, the conda environment
-      and a standalone HDF5 → CSV conversion tool.
+      Example plugin configurations, the conda environment and a standalone
+      HDF5 → CSV conversion tool.
 
 .. toctree::
    :hidden:

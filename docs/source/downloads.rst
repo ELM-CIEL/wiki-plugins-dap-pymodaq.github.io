@@ -1,23 +1,13 @@
 Downloads
 =========
 
-Ready-to-use files for the DAP PyMoDAQ plugins: PyMoDAQ presets, example plugin
-configurations, the conda environment, and a standalone HDF5 → CSV conversion tool.
+Ready-to-use files for the DAP PyMoDAQ plugins: example plugin configurations, the
+conda environment, and a standalone HDF5 → CSV conversion tool.
 
 .. note::
 
    The configuration files are provided as **working examples**. The IP addresses are
    placeholders — replace them with the values matching your own hardware before use.
-
-Presets
--------
-
-PyMoDAQ presets to load directly from the Dashboard (*Preset Mode → Load preset*). On
-Windows they are usually placed in ``C:\ProgramData\.pymodaq\preset_configs``.
-
-* :download:`Arduino preset </_files/presets/Arduino.xml>`
-* :download:`Raspberry Pi 3 preset </_files/presets/RaspPi3.xml>`
-* :download:`Raspberry Pi Zero preset </_files/presets/RaspPiZero.xml>`
 
 Example configurations
 ----------------------

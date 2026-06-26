@@ -7,8 +7,8 @@ project = 'DAP Pymodaq Plugins'
 author = 'BTS CIEL - Lycee Edouard Branly'
 copyright = '2026, BTS CIEL - Lycee Edouard Branly'
 
-version = '2.1.0'
-release = '2.1.0'
+version = '2.1.1'
+release = '2.1.1'
 
 language = 'en'
 

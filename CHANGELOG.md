@@ -5,6 +5,14 @@ Toutes les modifications notables de ce projet sont documentées ici.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 et le projet respecte le [versionnage sémantique](https://semver.org/lang/fr/) (`MAJEUR.MINEUR.CORRECTIF`).
 
+## [2.1.1] - 2026-06-11
+
+### Modifié
+- **Downloads** : presets retirés du site (conservés pour le package d'installation) ;
+  en-tête des configs reformulé (« An example configuration for a <appareil>, … ») ;
+  outil **H5 → CSV rendu portable** (`%~dp0`, plus de dépendance au Bureau) et lançable
+  par **double-clic** sur le `.bat`.
+
 ## [2.1.0] - 2026-06-11
 
 ### Ajouté

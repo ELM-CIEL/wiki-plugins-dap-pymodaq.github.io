@@ -64,19 +64,15 @@ HDF5 → CSV converter (tool)
 
 **Dependencies**: ``pip install PyQt6 h5py numpy``
 
-Run the script directly:
+**Easiest way** — keep ``H5_To_CSV.bat`` and ``h5_to_csv_gui.py`` in the **same folder**
+and simply **double-click** ``H5_To_CSV.bat``: it activates the ``Py26`` conda environment
+and launches the tool (it works from any location).
+
+Alternatively, run the script yourself from a terminal:
 
 .. code-block:: bash
 
    python h5_to_csv_gui.py
-
-or use the helper that activates the ``Py26`` conda environment first (Windows). Keep
-``H5_To_CSV.bat`` and ``h5_to_csv_gui.py`` **in the same folder** — it works from any
-location:
-
-.. code-block:: bat
-
-   H5_To_CSV.bat
 
 Downloads:
 

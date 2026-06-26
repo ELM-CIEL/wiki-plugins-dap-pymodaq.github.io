@@ -1,4 +1,4 @@
-# Example configuration for the DAP wiki — replace the IP addresses (and pins
+# An example configuration for a Raspberry Pi Zero, replace the IP addresses (and pins
 # if needed) with the values matching your own hardware before use.
 
 [RaspPiZero]

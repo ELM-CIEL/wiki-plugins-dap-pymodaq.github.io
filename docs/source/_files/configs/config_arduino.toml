@@ -1,4 +1,4 @@
-# Example configuration for the DAP wiki — replace the IP addresses (and pins
+# An example configuration for an Arduino, replace the IP addresses (and pins
 # if needed) with the values matching your own hardware before use.
 
 title = "this is the configuration file of the plugin Arduino"

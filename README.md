@@ -13,7 +13,7 @@ used by the official PyMoDAQ documentation (<https://pymodaq.cnrs.fr>) — writt
 
 Documentation split into two sections, one per plugin:
 
-- **Arduino plugin** — instruments built around an Arduino / ESP32 board (Telemetrix):
+- **Arduino plugin** — instruments built around an Arduino / ESP32 board (Telemetrix-ESP32):
   multicolor LED, fan/heater, analog and PT100 / ADS1115 acquisition, Dashboard
   extension.
 - **Raspberry plugin** — control of an experimental setup via a Raspberry Pi: a

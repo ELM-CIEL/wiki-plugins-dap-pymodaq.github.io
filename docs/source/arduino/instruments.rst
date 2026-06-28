@@ -25,11 +25,11 @@ the COM port is selectable from the parameter tree.
 Viewers (DAQ_Viewer 0D)
 -----------------------
 
-**PT100** — reads temperature from a PT100 RTD wired to a **MAX31865** amplifier/ADC.
+**Temperature MAX31865** — reads temperature from a PT100 RTD wired to a **MAX31865** amplifier/ADC.
 Communication with the MAX31865 is done over SPI by an **ESP32** running the Telemetrix-AIO
 WiFi firmware.
 
-**ADS1115** — reads analog voltages from an **ADS1115** (16-bit) or ADS1015 (12-bit) I2C
+**Voltage_ADS1115** — reads analog voltages from an **ADS1115** (16-bit) or ADS1015 (12-bit) I2C
 ADC, over WiFi (ESP32 / Telemetrix-AIO). Up to four single-ended channels (AIN0–AIN3) can
 be acquired at once; the gain and data rate are configurable.
 

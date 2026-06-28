@@ -3,7 +3,7 @@ Arduino plugin
 
 ``pymodaq_plugins_arduino`` groups a set of instruments built around an **Arduino** or
 **ESP32** board. Most instruments use the `Telemetrix
-<https://mryslab.github.io/telemetrix/>`_ library to drive an Arduino over USB; the ESP32
+<https://mryslab.github.io/telemetrix-esp32/>`_ library to drive an Arduino over USB; the ESP32
 instruments use **Telemetrix-AIO** to talk to the board over **WiFi**. No firmware change
 is needed to change the behaviour — a fixed sketch is flashed once, and everything is then
 driven from Python.

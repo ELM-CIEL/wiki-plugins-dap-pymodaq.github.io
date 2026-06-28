@@ -1,102 +1,101 @@
 # Wiki Plugins DAP Pymodaq
 
-Wiki technique documentant les plugins **PyMoDAQ** développés dans le cadre du projet
-**DAP** (BTS CIEL, Lycée Edouard Branly, partenariat **CETHIL**) : le plugin **Arduino**
-et le plugin **Raspberry** (qui unifie les anciens montages Raspberry Pi 3 et Pi Zero).
+Technical wiki documenting the **PyMoDAQ** plugins developed as part of the
+**DAP** project (BTS CIEL, Lycée Edouard Branly, in partnership with **CETHIL**): the
+**Arduino** plugin and the **Raspberry** plugin (which unifies the former Raspberry Pi 3
+and Pi Zero setups).
 
-Site de **documentation Sphinx** utilisant le thème **`sphinx_rtd_theme`** — le même que
-la documentation officielle de PyMoDAQ (<https://pymodaq.cnrs.fr>) — rédigé en **anglais**
-et déployé sur **GitHub Pages**.
+A **Sphinx documentation** site using the **`sphinx_rtd_theme`** theme — the same one
+used by the official PyMoDAQ documentation (<https://pymodaq.cnrs.fr>) — written in
+**English** and deployed on **GitHub Pages**.
 
-## Aperçu
+## Overview
 
-Documentation à deux sections, une par plugin :
+Documentation split into two sections, one per plugin:
 
-- **Arduino plugin** — instruments autour d'une carte Arduino / ESP32 (Telemetrix) :
-  LED multicolore, ventilateur/chauffage, acquisition analogique et PT100 / ADS1115,
-  extension Dashboard.
-- **Raspberry plugin** — pilotage d'un banc expérimental via une Raspberry Pi : un
-  actionneur et un détecteur PyMoDAQ dialoguant avec un serveur embarqué sur la Pi via
+- **Arduino plugin** — instruments built around an Arduino / ESP32 board (Telemetrix):
+  multicolor LED, fan/heater, analog and PT100 / ADS1115 acquisition, Dashboard
+  extension.
+- **Raspberry plugin** — control of an experimental setup via a Raspberry Pi: a
+  PyMoDAQ actuator and detector communicating with a server embedded on the Pi via
   ZeroMQ.
 
-## Mention IA
+## AI Disclosure
 
-Ce wiki a été conçu et développé avec l'assistance d'outils d'intelligence
-artificielle, utilisés comme de véritables **outils de productivité**. C'est une
-démarche assumée : l'IA fait aujourd'hui partie intégrante du métier de développeur et
-du marché actuel, et nous choisissons de **nous y adapter et de la maîtriser** plutôt
-que de l'ignorer.
+This wiki was designed and developed with the help of artificial intelligence tools,
+used as genuine **productivity tools**. This is a deliberate choice: AI is now an
+integral part of the developer profession and today's job market, and we choose to
+**adapt to it and master it** rather than ignore it.
 
-Ce qui fait la différence, c'est l'**usage**. Nous nous **documentons en profondeur**
-sur ces outils pour les exploiter avec discernement, comme un véritable levier de
-productivité. L'IA accélère la mise en œuvre — elle ne remplace ni la conception, ni les
-décisions techniques, ni la compréhension du code. La **grande majorité des
-fonctionnalités** et de la **stack technique** employées ici nous sont familières : nous
-savons ce qui a été construit, pourquoi, et comment le faire évoluer et le maintenir.
+What makes the difference is the **usage**. We **research these tools in depth** in
+order to use them with discernment, as a genuine productivity lever. AI speeds up
+implementation — it replaces neither the design, nor the technical decisions, nor the
+understanding of the code. The **vast majority of the features** and the **technical
+stack** used here are familiar to us: we know what was built, why, and how to evolve
+and maintain it.
 
-Concrètement, un projet de cette envergure représente normalement **3 à 5 semaines de
-travail à temps plein** (soit plusieurs mois en parallèle de nos études). En nous
-appuyant sur l'IA, nous l'avons réalisé en une fraction de ce temps, en concentrant
-notre énergie sur l'**architecture**, la **qualité** et les **détails** plutôt que sur
-les tâches répétitives — exactement le gain de productivité recherché dans un
-environnement de travail moderne.
+Concretely, a project of this scope normally represents **3 to 5 weeks of full-time
+work** (i.e. several months alongside our studies). By leveraging AI, we completed it
+in a fraction of that time, focusing our energy on **architecture**, **quality**, and
+**details** rather than repetitive tasks — exactly the productivity gain sought in a
+modern work environment.
 
-## Structure du projet
+## Project Structure
 
 ```
 wiki-plugins-dap-pymodaq/
 ├── docs/
-│   ├── requirements.txt          # Dépendances Sphinx (sphinx, rtd-theme, design)
+│   ├── requirements.txt          # Sphinx dependencies (sphinx, rtd-theme, design)
 │   └── source/
-│       ├── conf.py               # Configuration Sphinx (thème, version, langue)
-│       ├── index.rst             # Accueil (cartes vers les 2 plugins)
-│       ├── _static/css/          # CSS d'appoint
-│       ├── arduino/              # Documentation du plugin Arduino
-│       └── raspberry/            # Documentation du plugin Raspberry
-├── .github/workflows/deploy.yml  # CI : build Sphinx + déploiement GitHub Pages
-├── ARCHITECTURE.md               # Choix techniques et organisation
-├── CHANGELOG.md                  # Historique des versions
-├── SPRINTS.md                    # Backlog et avancement par sprint
+│       ├── conf.py               # Sphinx configuration (theme, version, language)
+│       ├── index.rst             # Home page (cards linking to the 2 plugins)
+│       ├── _static/css/          # Supplementary CSS
+│       ├── arduino/              # Arduino plugin documentation
+│       └── raspberry/            # Raspberry plugin documentation
+├── .github/workflows/deploy.yml  # CI: Sphinx build + GitHub Pages deployment
+├── ARCHITECTURE.md               # Technical choices and organization
+├── CHANGELOG.md                  # Version history
+├── SPRINTS.md                    # Backlog and progress by sprint
 └── README.md
 ```
 
-Voir [ARCHITECTURE.md](ARCHITECTURE.md) pour le détail des choix techniques.
+See [ARCHITECTURE.md](ARCHITECTURE.md) for details on technical choices.
 
-## Construire le wiki en local
+## Building the Wiki Locally
 
-Prérequis : **Python 3**.
+Requirement: **Python 3**.
 
 ```bash
 python -m venv .venv
-# Windows :
+# Windows:
 .venv\Scripts\activate
-# Linux / macOS :
+# Linux / macOS:
 # source .venv/bin/activate
 
 pip install -r docs/requirements.txt
 sphinx-build -b html docs/source docs/_build/html
 
-# Prévisualiser :
+# Preview:
 python -m http.server 8000 --directory docs/_build/html
 # → http://localhost:8000
 ```
 
-## Déploiement
+## Deployment
 
-Le déploiement est **automatique** : tout push sur `main` déclenche le workflow
-GitHub Actions ([.github/workflows/deploy.yml](.github/workflows/deploy.yml)) qui
-**build le site Sphinx** puis le publie sur GitHub Pages.
+Deployment is **automatic**: every push to `main` triggers the GitHub Actions workflow
+([.github/workflows/deploy.yml](.github/workflows/deploy.yml)), which **builds the
+Sphinx site** and then publishes it to GitHub Pages.
 
-> ℹ️ Prérequis (une seule fois) : dans **Settings → Pages** du dépôt, choisir la
-> source **« GitHub Actions »**.
+> ℹ️ Prerequisite (one-time setup): in the repository's **Settings → Pages**, select
+> **"GitHub Actions"** as the source.
 
-## Méthode de travail et versionnage
+## Workflow and Versioning
 
-- Le projet avance par **sprints** (1 sprint = 1 fonctionnalité), suivis dans
+- The project progresses in **sprints** (1 sprint = 1 feature), tracked in
   [SPRINTS.md](SPRINTS.md).
-- On **commite directement sur `main`** ; un **tag Git** (`vX.Y.Z`) est posé à chaque
-  version publiée.
-- Versionnage sémantique `MAJEUR.MINEUR.CORRECTIF`. La version courante est définie
-  dans [docs/source/conf.py](docs/source/conf.py) (`version` / `release`) et historisée
-  dans [CHANGELOG.md](CHANGELOG.md).
-- Les fichiers de documentation racine sont mis à jour **à chaque sprint**.
+- We **commit directly to `main`**; a **Git tag** (`vX.Y.Z`) is set for each published
+  version.
+- Semantic versioning `MAJOR.MINOR.PATCH`. The current version is defined in
+  [docs/source/conf.py](docs/source/conf.py) (`version` / `release`) and tracked in
+  [CHANGELOG.md](CHANGELOG.md).
+- Root-level documentation files are updated **at every sprint**.
